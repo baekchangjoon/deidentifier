@@ -1,0 +1,9 @@
+{
+  "token": "abc123",
+  "user": {
+    "name": "홍길동",
+    "email": "hong@example.com",
+    "phone": "010-1234-5678"
+  }
+}
+

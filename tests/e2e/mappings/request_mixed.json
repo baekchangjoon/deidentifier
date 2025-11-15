@@ -1,0 +1,24 @@
+{
+  "request": {
+    "method": "PUT",
+    "url": "/api/user/update?userId=123&name=홍길동",
+    "headers": {
+      "Authorization": "Bearer token123",
+      "X-User-Name": "홍길동",
+      "X-User-Phone": "010-1234-5678"
+    },
+    "body": {
+      "name": "홍길동",
+      "phone": "010-1234-5678",
+      "address": "서울시 강남구 테헤란로 123"
+    }
+  },
+  "response": {
+    "status": 200,
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "bodyFileName": "user_response_1.json"
+  }
+}
+

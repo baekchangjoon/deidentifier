@@ -1,0 +1,25 @@
+{
+  "request": {
+    "method": "POST",
+    "url": "/api/user",
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "body": {
+      "name": "%ED%99%8D%EA%B8%B8%EB%8F%99",
+      "phone": "010-1234-5678",
+      "email": "hong%40example.com",
+      "address": "%EC%84%9C%EC%9A%B8%EC%8B%9C%20%EA%B0%95%EB%82%A8%EA%B5%AC%20%ED%85%8C%ED%97%A4%EB%9E%80%EB%A1%9C%20123"
+    }
+  },
+  "response": {
+    "status": 201,
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "body": {
+      "message": "User created successfully"
+    }
+  }
+}
+

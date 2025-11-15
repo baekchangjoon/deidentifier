@@ -1,0 +1,17 @@
+{
+  "scenarioName": "UserLoginFlow",
+  "requiredScenarioState": "Started",
+  "newScenarioState": "LoggedIn",
+  "request": {
+    "method": "POST",
+    "url": "/api/login"
+  },
+  "response": {
+    "status": 200,
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "bodyFileName": "login_response.json"
+  }
+}
+

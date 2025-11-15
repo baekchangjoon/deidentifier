@@ -1,0 +1,24 @@
+{
+  "scenarioName": "UrlEncodedFlow",
+  "requiredScenarioState": "Started",
+  "newScenarioState": "UserCreated",
+  "request": {
+    "method": "POST",
+    "url": "/api/user/login",
+    "headers": {
+      "X-User-Name": "%ED%99%8D%EA%B8%B8%EB%8F%99"
+    },
+    "body": {
+      "name": "%ED%99%8D%EA%B8%B8%EB%8F%99",
+      "phone": "010-1234-5678"
+    }
+  },
+  "response": {
+    "status": 200,
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "bodyFileName": "login_response.json"
+  }
+}
+

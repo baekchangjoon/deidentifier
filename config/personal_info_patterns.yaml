@@ -1,0 +1,152 @@
+# 개인정보 식별 패턴 정의
+# key: JSON 키 이름 패턴 (정규표현식 지원)
+# pattern: 값 검증 패턴 (정규표현식)
+# type: 개인정보 유형
+
+personal_info_patterns:
+  # 이름 관련
+  - keys:
+      - "^name$"
+      - "^nm$"
+      - "^user_name$"
+      - "^userName$"
+      - "^customer_name$"
+      - "^customerName$"
+      - ".*name.*"
+    type: "name"
+    pattern: "^[가-힣]{2,4}$|^[A-Za-z\\s]{2,30}$"
+
+  # 법인명 관련
+  - keys:
+      - "^company_name$"
+      - "^companyName$"
+      - "^corp_name$"
+      - "^corpName$"
+      - ".*company.*"
+      - ".*corp.*"
+    type: "company_name"
+    pattern: "^[가-힣]{2,20}$|^[A-Za-z\\s]{2,50}$"
+
+  # 주민등록번호
+  - keys:
+      - "^ssn$"
+      - "^resident_number$"
+      - "^residentNumber$"
+      - "^rrn$"
+      - ".*ssn.*"
+      - ".*resident.*"
+    type: "ssn"
+    pattern: "^\\d{6}-[1-4]\\d{6}$"
+
+  # 여권번호
+  - keys:
+      - "^passport$"
+      - "^passport_number$"
+      - "^passportNumber$"
+    type: "passport"
+    pattern: "^[A-Z]{1,2}\\d{7,9}$"
+
+  # 운전면허번호
+  - keys:
+      - "^driver_license$"
+      - "^driverLicense$"
+      - "^dl_number$"
+      - "^dlNumber$"
+    type: "driver_license"
+    pattern: "^\\d{2}-\\d{2}-\\d{6}-\\d{2}$"
+
+  # 생년월일
+  - keys:
+      - "^birth_date$"
+      - "^birthDate$"
+      - "^birthday$"
+      - "^dob$"
+      - "^date_of_birth$"
+      - ".*birth.*"
+    type: "birth_date"
+    pattern: "^\\d{4}-\\d{2}-\\d{2}$|^\\d{8}$"
+
+  # 전화번호 (휴대전화, 일반전화)
+  - keys:
+      - "^phone$"
+      - "^phone_number$"
+      - "^phoneNumber$"
+      - "^mobile$"
+      - "^mobile_number$"
+      - "^mobileNumber$"
+      - "^tel$"
+      - "^telephone$"
+      - ".*phone.*"
+      - ".*mobile.*"
+      - ".*tel.*"
+    type: "phone"
+    pattern: "^01[0-9]-\\d{3,4}-\\d{4}$|^0\\d{1,2}-\\d{3,4}-\\d{4}$|^\\d{2,3}-\\d{3,4}-\\d{4}$"
+
+  # 주소
+  - keys:
+      - "^address$"
+      - "^addr$"
+      - "^postal_address$"
+      - "^postalAddress$"
+      - ".*address.*"
+    type: "address"
+    pattern: "^[가-힣\\s\\d-]+$|^[A-Za-z\\s\\d,-]+$"
+
+  # 카드번호
+  - keys:
+      - "^card_number$"
+      - "^cardNumber$"
+      - "^card_no$"
+      - "^cardNo$"
+      - "^credit_card$"
+      - "^creditCard$"
+      - ".*card.*"
+    type: "card_number"
+    pattern: "^\\d{4}-\\d{4}-\\d{4}-\\d{4}$|^\\d{16}$"
+
+  # 계좌번호
+  - keys:
+      - "^account_number$"
+      - "^accountNumber$"
+      - "^account_no$"
+      - "^accountNo$"
+      - "^bank_account$"
+      - "^bankAccount$"
+      - ".*account.*"
+    type: "account_number"
+    pattern: "^\\d{10,20}$"
+
+  # 이메일
+  - keys:
+      - "^email$"
+      - "^e_mail$"
+      - "^eMail$"
+      - "^email_address$"
+      - "^emailAddress$"
+      - ".*email.*"
+    type: "email"
+    pattern: "^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}$"
+
+  # IMEI
+  - keys:
+      - "^imei$"
+      - "^IMEI$"
+    type: "imei"
+    pattern: "^\\d{15}$"
+
+  # IMSI
+  - keys:
+      - "^imsi$"
+      - "^IMSI$"
+    type: "imsi"
+    pattern: "^\\d{15}$"
+
+  # MAC Address
+  - keys:
+      - "^mac_address$"
+      - "^macAddress$"
+      - "^mac$"
+      - "^MAC$"
+    type: "mac_address"
+    pattern: "^([0-9A-Fa-f]{2}[:-]){5}([0-9A-Fa-f]{2})$"
+

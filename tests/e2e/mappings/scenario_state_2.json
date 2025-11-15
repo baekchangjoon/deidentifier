@@ -1,0 +1,17 @@
+{
+  "scenarioName": "UserLoginFlow",
+  "requiredScenarioState": "LoggedIn",
+  "newScenarioState": "ProfileViewed",
+  "request": {
+    "method": "GET",
+    "url": "/api/profile"
+  },
+  "response": {
+    "status": 200,
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "bodyFileName": "profile_response.json"
+  }
+}
+

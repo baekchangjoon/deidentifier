@@ -1,0 +1,24 @@
+{
+  "request": {
+    "method": "PUT",
+    "url": "/api/user/update?userId=123&name=%ED%99%8D%EA%B8%B8%EB%8F%99",
+    "headers": {
+      "Authorization": "Bearer token123",
+      "X-User-Name": "%ED%99%8D%EA%B8%B8%EB%8F%99",
+      "X-User-Phone": "010-1234-5678"
+    },
+    "body": {
+      "name": "%ED%99%8D%EA%B8%B8%EB%8F%99",
+      "phone": "010-1234-5678",
+      "address": "%EC%84%9C%EC%9A%B8%EC%8B%9C%20%EA%B0%95%EB%82%A8%EA%B5%AC%20%ED%85%8C%ED%97%A4%EB%9E%80%EB%A1%9C%20123"
+    }
+  },
+  "response": {
+    "status": 200,
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "bodyFileName": "user_response_1.json"
+  }
+}
+

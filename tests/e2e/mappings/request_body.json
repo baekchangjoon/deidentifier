@@ -1,0 +1,30 @@
+{
+  "request": {
+    "method": "POST",
+    "url": "/api/user",
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "bodyPatterns": [
+      {
+        "matchesJsonPath": "$.name"
+      }
+    ],
+    "body": {
+      "name": "홍길동",
+      "phone": "010-1234-5678",
+      "email": "hong@example.com",
+      "address": "서울시 강남구 테헤란로 123"
+    }
+  },
+  "response": {
+    "status": 201,
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "body": {
+      "message": "User created successfully"
+    }
+  }
+}
+

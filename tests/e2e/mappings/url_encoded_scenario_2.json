@@ -1,0 +1,21 @@
+{
+  "scenarioName": "UrlEncodedFlow",
+  "requiredScenarioState": "UserCreated",
+  "newScenarioState": "Completed",
+  "request": {
+    "method": "GET",
+    "url": "/api/user/profile?name=%ED%99%8D%EA%B8%B8%EB%8F%99&phone=010-1234-5678",
+    "headers": {
+      "X-User-Name": "%ED%99%8D%EA%B8%B8%EB%8F%99",
+      "X-User-Phone": "010-1234-5678"
+    }
+  },
+  "response": {
+    "status": 200,
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "bodyFileName": "profile_response.json"
+  }
+}
+

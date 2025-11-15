@@ -1,0 +1,21 @@
+{
+  "scenarioName": "UserUpdateFlow",
+  "requiredScenarioState": "UserUpdated",
+  "newScenarioState": "Completed",
+  "request": {
+    "method": "GET",
+    "url": "/api/user/profile?name=홍길동&phone=010-1234-5678",
+    "headers": {
+      "X-User-Name": "홍길동",
+      "X-User-Phone": "010-1234-5678"
+    }
+  },
+  "response": {
+    "status": 200,
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "bodyFileName": "profile_response.json"
+  }
+}
+

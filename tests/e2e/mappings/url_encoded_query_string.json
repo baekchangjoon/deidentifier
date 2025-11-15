@@ -1,0 +1,14 @@
+{
+  "request": {
+    "method": "GET",
+    "url": "/api/user/search?name=%ED%99%8D%EA%B8%B8%EB%8F%99&phone=010-1234-5678&email=hong%40example.com"
+  },
+  "response": {
+    "status": 200,
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "bodyFileName": "user_response_1.json"
+  }
+}
+

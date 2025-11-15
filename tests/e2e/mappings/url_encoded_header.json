@@ -1,0 +1,20 @@
+{
+  "request": {
+    "method": "GET",
+    "url": "/api/user/profile",
+    "headers": {
+      "Authorization": "Bearer token123",
+      "X-User-Name": "%ED%99%8D%EA%B8%B8%EB%8F%99",
+      "X-User-Phone": "010-1234-5678",
+      "X-User-Email": "hong%40example.com"
+    }
+  },
+  "response": {
+    "status": 200,
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "bodyFileName": "user_response_1.json"
+  }
+}
+

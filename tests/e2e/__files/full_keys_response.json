@@ -1,0 +1,15 @@
+{
+  "name": "홍길동",
+  "user_name": "홍길동",
+  "customer_name": "홍길동",
+  "phone": "010-1234-5678",
+  "phone_number": "010-1234-5678",
+  "mobile": "010-1234-5678",
+  "email": "hong@example.com",
+  "email_address": "hong@example.com",
+  "address": "서울시 강남구 테헤란로 123",
+  "postal_address": "서울시 강남구 테헤란로 123",
+  "company_name": "유플러스",
+  "corp_name": "유플러스"
+}
+

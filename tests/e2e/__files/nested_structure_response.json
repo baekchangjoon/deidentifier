@@ -1,0 +1,25 @@
+{
+  "user": {
+    "personal_info": {
+      "name": "홍길동",
+      "nm": "홍길동",
+      "phone": "010-1234-5678",
+      "email": "hong@example.com"
+    },
+    "address_info": {
+      "address": "서울시 강남구 테헤란로 123",
+      "addr": "서울시 강남구 테헤란로 123"
+    },
+    "company_info": {
+      "company_name": "유플러스",
+      "corp_name": "유플러스"
+    }
+  },
+  "metadata": {
+    "created_by": {
+      "name": "홍길동",
+      "nm": "홍길동"
+    }
+  }
+}
+
