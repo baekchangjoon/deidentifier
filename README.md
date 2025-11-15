@@ -1,6 +1,6 @@
 # Wiremock 개인정보 익명화 도구
 
-[![codecov](https://codecov.io/gh/YOUR_USERNAME/YOUR_REPO/branch/main/graph/badge.svg)](https://codecov.io/gh/YOUR_USERNAME/YOUR_REPO)
+[![codecov](https://codecov.io/gh/baekchangjoon/deidentifier/branch/main/graph/badge.svg?token=C0GGLZ3WCQ)](https://codecov.io/gh/baekchangjoon/deidentifier)
 
 Wiremock의 API mocking 데이터에서 개인정보를 식별하고 가상의 개인정보로 치환하는 도구입니다.
 
